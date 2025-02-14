@@ -1,6 +1,8 @@
-let studentFullName = 'Shamin shaju';
-let studentNumber="1203841";
-const result='studentFullName-$(studentNumber)';
+const studentFullName="Shamin shaju";
+const studentNumber= 1203841;
+const result= `${studentFullName}-${studentNumber}`;
 console.log(result);
-
-let headerCount=document.querySelector("h1");
+const headerContent=document.querySelector("h1");
+console.log(headerContent.textContent);
+headerContent.textContent=result;
+headerContent.classList.add("headingPrimary");
